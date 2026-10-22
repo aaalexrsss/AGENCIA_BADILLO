@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA TRAVEL</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <h1>NOVA TRAVEL</h1>
+        <p>Descubre los mejores destinos de Ecuador</p>
+
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="destinos">
+            <h2>Destinos turísticos</h2>
+            <p>Conoce algunos lugares increíbles de Ecuador.</p>
+
+            <div class="tarjetas">
+                <article>
+                    <h3>Cuenca</h3>
+                    <img src="img/cuenca.jpg"
+                         alt="Ilustración de Cuenca y sus montañas"
+                         width="600" height="360">
+                    <p>Una ciudad llena de cultura e historia.</p>
+                </article>
+
+                <article>
+                    <h3>Baños</h3>
+                    <img src="img/banos.jpg"
+                         alt="Ilustración de una cascada en Baños"
+                         width="600" height="360">
+                    <p>Un lugar ideal para disfrutar de la naturaleza.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="planes">
+            <h2>Planes turísticos</h2>
+
+            <table>
+                <caption>Opciones de viaje</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Días</th>
+                        <th scope="col">Actividad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Cuenca</th>
+                        <td>2</td>
+                        <td>Cultura</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Baños</th>
+                        <td>3</td>
+                        <td>Aventura</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form action="#contacto" method="get">
+                <fieldset>
+                    <legend>Datos del viajero</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre"
+                           name="nombre" required>
+
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo"
+                           name="correo" required
+                           pattern="[a-z0-9._]+@[a-z0-9]+[.][a-z]{2,}"
+                           title="Ejemplo: nombre@gmail.com">
+
+                    <label for="destino">Destino:</label>
+                    <select id="destino" name="destino" required>
+                        <option value="">Selecciona un destino</option>
+                        <option value="cuenca">Cuenca</option>
+                        <option value="banos">Baños</option>
+                    </select>
+
+                    <label for="personas">Personas:</label>
+                    <input type="number" id="personas"
+                           name="personas" min="1" max="10"
+                           required>
+
+                    <label for="fecha">Fecha del viaje:</label>
+                    <input type="date" id="fecha"
+                           name="fecha" required>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+
+            <p>Formulario de práctica. No realiza reservas reales.</p>
+        </section>
+
+        <aside>
+            <h2>Consejo para viajeros</h2>
+            <p>Revisa el clima antes de viajar y lleva todo lo necesario.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>NOVA TRAVEL 2026</p>
+    </footer>
+
+</body>
+</html>
