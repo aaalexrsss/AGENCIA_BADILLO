@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | 1 | Refutar | En la auditoria me pusieron que puse un guion en vez de un asterisco pero al revisar mi CSS se puede ver que sí está el `*` pero este selector es valido en CSS por eso no lo cambio. | Hallazgo 1 | No aplica |
 | 2 | Refutar | Mi pagina permite navegar con Tab y Enter y tiene foco visible ademas uso `nav`, `main` y encabezados para organizar el contenido y en si la norma WCAG 2.4.1 no exige especificamente un Skip Link ya que existen otros mecanismos de navegacion accesible por lo que para mi su ausencia no es un error | Hallazgo 2 | No aplica |
-| 3 | Aceptar | Revise y si encontre que los bordes tenian los colores escritos directamente y la actividad pide usar variables CSS voy a cambiarlos para que todos los colores esten mejor organizados. | Hallazgo 3 | Pendiente |
+| 3 | Aceptar | Revise y si encontre que los bordes tenian los colores escritos directamente y la actividad pide usar variables CSS voy a cambiarlos para que todos los colores esten mejor organizados. | Hallazgo 3 | Correcion de los coloress|
 
 ## Evidencias
 
@@ -54,7 +54,7 @@ Se puede ver que su rol esta en main.
 
 
 
-### Hallazgo 3. Variables CSS
+### Hallazgo 3.
 
 
 **Antes:**
