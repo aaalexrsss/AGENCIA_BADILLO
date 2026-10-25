@@ -3,6 +3,12 @@
     --color-fondo: #f4f7f7;
     --color-texto: #25383c;
     --color-blanco: #ffffff;
+
+    --borde-tarjeta: #a7babb;
+    --borde-tabla: #889e9e;
+    --borde-formulario: #657e82;
+    --color-foco: #b35b00;
+    --color-foco-nav: #ffe082;
 }
 
 * {
@@ -83,7 +89,7 @@ h2, h3 {
 article {
     flex: 1 1 240px;
     min-width: 0;
-    border: 1px solid #a7babb;
+    border: 1px solid var(--borde-tarjeta);
     border-radius: 8px;
     padding: 15px;
 }
@@ -103,7 +109,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #889e9e;
+    border: 1px solid var(--borde-tabla);
     padding: 8px;
     text-align: left;
 }
@@ -115,7 +121,7 @@ caption {
 
 fieldset {
     min-width: 0;
-    border: 1px solid #889e9e;
+    border: 1px solid var(--borde-tabla);
     border-radius: 8px;
     padding: 15px;
 }
@@ -135,7 +141,7 @@ input, select {
     min-width: 0;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #657e82;
+    border: 1px solid var(--borde-formulario);
     border-radius: 5px;
     font: inherit;
 }
@@ -155,12 +161,12 @@ a:focus-visible,
 input:focus-visible,
 select:focus-visible,
 button:focus-visible {
-    outline: 3px solid #b35b00;
+    outline: 3px solid var(--color-foco);
     outline-offset: 3px;
 }
 
 nav a:focus-visible {
-    outline-color: #ffe082;
+    outline-color: var(--color-foco-nav);
 }
 
 
